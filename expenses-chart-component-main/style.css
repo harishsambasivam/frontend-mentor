@@ -1,0 +1,162 @@
+/* chores */
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --cream: hsl(27, 66%, 92%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* container */
+
+body {
+  background-color: var(--cream);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+#container {
+  margin: 0 30vw;
+  position: relative;
+  /* display: grid;
+  place-self: center; */
+  margin-top: 20vh;
+}
+
+/* card */
+
+.card {
+  display: grid;
+  grid-template-rows: 20fr 80fr;
+}
+
+/* card - header */
+
+.card-header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  width: 100%;
+  background-color: var(--soft-red);
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  color: var(--very-pale-orange);
+}
+
+.card-header-left > p {
+    padding: 0.5rem 0;
+}
+
+.card-header-left > span {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.card-header-right {
+  margin-left: auto;
+}
+
+#logo {
+  display: block;
+  width: 50px;
+  height: 40px;
+}
+
+/* card - content */
+
+.card-body {
+  background-color: var(--very-pale-orange);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  height: 60vh;
+  display: grid;
+  grid-template-rows: 10fr 30fr 10fr;
+}
+
+.card-heading {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.graph {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: end;
+    padding: 2rem 0;
+    justify-content: space-evenly;
+}
+
+.graph > span:before {
+    content: "";
+    display: block;
+    background-color: #3d9970;
+    height: 10vh;
+    border-radius: 0.3rem;
+    background-color: var(--soft-red);
+    cursor: pointer;
+}
+
+.graph > span:hover::before {
+    background-color: var(--cyan);
+}
+
+
+.card-footer {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    padding: 2rem 0;
+}
+
+.card-footer-left > p {
+    color: rgba(0,0,0,0.6);
+    padding: 0.5rem 0;
+}
+
+.card-footer-left > span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-footer-right {
+    margin-left: auto;
+    margin-top: auto;
+    padding: 0.5rem 0;
+}
+
+.card-footer-right > p {
+    font-weight: 600;
+    padding: 0.2rem 0;
+}
+
+.card-footer-right > span {
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
