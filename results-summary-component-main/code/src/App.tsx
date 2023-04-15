@@ -9,19 +9,19 @@ function App() {
     <div className="w-screen min-h-screen md:flex md:items-center md:justify-center font-hanken">
       <div className="flex flex-col w-screen md:shadow-xl md:flex-row md:w-6/12 md:rounded-2xl">
         <div className="grid gap-2 p-8 text-white capitalize md:gap-0 md:w-1/2 rounded-b-2xl md:rounded-2xl place-items-center bg-gradient-to-b from-violetblue-400 to-cobaltblue-500">
-          <p className="text-2xl text-violetblue-50 font-weight-500">
+          <p className="text-3xl text-violetblue-50 font-weight-500">
             Your Result
           </p>
           <div className="flex flex-col items-center justify-center gap-2 leading-3 rounded-full shadow-sm w-36 h-36 bg-gradient-to-b from-violetblue-600 to-cobaltblue-300">
-            <span className="text-5xl font-weight-700">76</span>
+            <span className="text-6xl font-weight-700">76</span>
             <p className="opacity-60 text-violetblue-50 font-weight-400">
               of 100
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center gap-1 text-center md:gap-2">
-            <p className="text-2xl">Great</p>
-            <p className="text-sm text-violetblue-50">
+            <p className="text-3xl">Great</p>
+            <p className="text-violetblue-50">
               {" "}
               You scored higher than 65% of the people who have taken these
               tests.
@@ -29,7 +29,7 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col justify-center gap-4 p-8 md:w-1/2">
-          <p className="text-2xl font-weight-500">Summary</p>
+          <p className="text-3xl font-weight-500">Summary</p>
           <div className="flex flex-col w-full gap-4 font-weight-500">
             <div className="flex w-full p-4 rounded-lg bg-lightred-50 ">
               <span className="flex items-center justify-center gap-1 text-lightred-300 ">
