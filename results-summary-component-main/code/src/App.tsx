@@ -7,8 +7,8 @@ import "./App.css";
 function App() {
   return (
     <div className="w-screen min-h-screen md:flex md:items-center md:justify-center font-hanken">
-      <div className="flex flex-col w-screen md:shadow-xl md:flex-row md:w-7/12 rounded-2xl md:h-50-vh">
-        <div className="grid gap-4 p-8 text-white capitalize md:gap-1 md:w-1/2 rounded-2xl place-items-center bg-gradient-to-b from-violetblue-400 to-cobaltblue-500">
+      <div className="flex flex-col w-screen md:shadow-xl md:flex-row md:w-6/12 md:rounded-2xl md:h-50-vh">
+        <div className="grid gap-4 p-8 text-white capitalize md:gap-1 md:w-1/2 rounded-b-2xl md:rounded-2xl place-items-center bg-gradient-to-b from-violetblue-400 to-cobaltblue-500">
           <p className="text-2xl text-violetblue-50 font-weight-500">
             Your Result
           </p>
